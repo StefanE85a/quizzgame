@@ -6,11 +6,15 @@
 body {
         font-family: "Kanit", sans-serif;
         text-align: center;
+        color: #ffffff;
+        background: url(../images/bg-image-1920x1080.webp) no-repeat center center fixed;
 }
 
 /* ------------------------------Header Section------------------------------ */
 
 /* ------------------------------Main Section------------------------------ */
+
+
 
 #game-container {
     width: 50%;
@@ -57,7 +61,7 @@ footer {
 }
 
 #social-networks i {
-    font-size: 160%;
+    font-size: 260%;
     padding: 5%;
     color: #3a3a3a;
 }
