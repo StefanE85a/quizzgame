@@ -12,6 +12,31 @@ body {
 
 /* ------------------------------Main Section------------------------------ */
 
+#game-container {
+    width: 50%;
+    margin: auto;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#questions {
+    margin-bottom: 20px;
+}
+
+#option div {
+    margin: 10px 0;
+    cursor: pointer;
+    padding: 10px;
+    background-color: lightgray;
+    border-radius: 5px;
+}
+
+#option div:hover {
+    background-color: gray;
+    color: white;
+}
+
 /* ------------------------------Footer Section------------------------------ */
 
 footer {
