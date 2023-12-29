@@ -1,3 +1,43 @@
 /* -----Adding Google fonts import----- */
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600&display=swap");
 
+
+/* ------------------------------Body Section------------------------------ */
+body {
+        font-family: "Kanit", sans-serif;
+        text-align: center;
+}
+
+/* ------------------------------Header Section------------------------------ */
+
+/* ------------------------------Main Section------------------------------ */
+
+/* ------------------------------Footer Section------------------------------ */
+
+footer {
+    background-color: #131313;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/* -----Social Media Icons----- */
+#social-networks {
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+#social-networks i {
+    font-size: 160%;
+    padding: 5%;
+    color: #3a3a3a;
+}
+
+/* -----Footer hover color----- */
+#social-networks i:hover {
+    color: rgba(255, 255, 255, 0.548);
+}
