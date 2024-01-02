@@ -17,20 +17,13 @@
     </header>
 
 <!--------------------------------Main Section--------------------------------->
-    <main>
-        <main class="background-image">
-        <div class="game-container">
-        <div id="questions">My Questions</div>
-        <div id="option">
-
-        </div>
-
-        <div class="score-area">
-            <p class="scores">Correct Answers <span id="score">0</span></p>
-            <p class="scores">Incorrect Answers <span id="Incorrect">0</span></p>
-        </div>
-
-
+<main class="background-image">
+        <section id="game-container" role="main">
+            <h2 id="questions">Questions supposed to go here</h2>
+            <div id="options" role="list"></div>
+            <button id="next-button" onclick="loadNextQuestion()">Next</button>
+            <p id="score-board">Score: <span id="score">0</span></p>
+        </section>
     </main>
 
 <!-------------------------------Footer Section-------------------------------->
@@ -60,10 +53,10 @@
     </footer>
 
 <!-------------------------------Script Section-------------------------------->
+<!-- Google Fonts for footer - Social network -->
+    <script src="https://kit.fontawesome.com/18e8b4f675.js" crossorigin="anonymous"></script>
 <!-- Game-Container -->
     <script src="assets/js/script.js"></script>
 
-<!-- Google Fonts for footer - Social network -->
-    <script src="https://kit.fontawesome.com/18e8b4f675.js" crossorigin="anonymous"></script>
 </body>
 </html>

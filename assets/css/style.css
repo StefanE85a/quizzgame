@@ -19,8 +19,6 @@ body {
 
 /* ------------------------------Main Section------------------------------ */
 
-
-
 #game-container {
     width: 50%;
     margin: auto;
@@ -29,21 +27,26 @@ body {
     border-radius: 8px;
 }
 
+#game-container h2 {
+    color: #444;
+}
+
 #questions {
     margin-bottom: 20px;
 }
 
-#option div {
+#options div {
     margin: 10px 0;
     cursor: pointer;
     padding: 10px;
     background-color: lightgray;
     border-radius: 5px;
+    text-align: center;
 }
 
-#option div:hover {
+#options div:hover {
     background-color: gray;
-    color: white;
+    color: black;
 }
 
 /* ------------------------------Footer Section------------------------------ */
@@ -59,7 +62,7 @@ footer {
 /* -----Social Media Icons----- */
 #social-networks {
     text-align: center;
-    padding: 20px 0;
+    padding: 10px 0;
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
@@ -74,4 +77,12 @@ footer {
 /* -----Footer hover color----- */
 #social-networks i:hover {
     color: rgba(255, 255, 255, 0.548);
+}
+
+/* --------------Media query: tablets and larger (768px and up)-------------- */
+@media screen and (min-width: 768px) {
+
+#social-networks {
+    padding: 20px 0;
+}
 }
