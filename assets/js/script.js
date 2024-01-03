@@ -131,6 +131,7 @@ function restartQuiz() {
     document.getElementById("retry-button").style.display = "none";
     loadQuestion();
     document.getElementById("game-container").style.display = "";
+    document.getElementById("next-button").style.display = "";
 }
 
 loadQuestion();
