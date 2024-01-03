@@ -71,11 +71,15 @@ function loadQuestion() {
 
 function checkAnswer(selectedOption) {
     var currentQuestion = quizQuestions[currentQuestionIndex];
+    var feedbackElement = document.getElementById("feedback");
+
     if (selectedOption === currentQuestion.answer) {
         score++;
-        alert("Correct!");
+        feedbackElement.textContent = "Correct!";
+        feedbackElement.style.color = "green";
     } else {
-        alert("Wrong answer.");
+        feedbackElement.textContent = "Wrong answer.";
+        feedbackElement.style.color = "red";
     }
 }
 
