@@ -7,19 +7,27 @@ body {
     font-family: "Kanit", sans-serif;
     text-align: center;
     color: #ffffff;
-    background: url(../images/bg-image-1920x1080.webp) no-repeat center center fixed;
     background-size: cover;
     margin: 0;
     height: 100%;
     width: 100%;
     overflow: auto;
+    background-color: rgb(61, 61, 138);
 }
 
 /* ------------------------------Header Section------------------------------ */
 .heading {
     margin-top: 0;
     padding-top: 0;
-    margin-bottom: 15px;
+    margin-bottom: 0px;
+}
+
+.logo {
+    width: 280px;
+    height: 150px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
 }
 
 /* ------------------------------Main Section------------------------------ */
@@ -31,10 +39,11 @@ body {
     background-color: black;
     padding: 20px 20px;
     border-radius: 8px;
+    background: url(../images/bg-image-700x394.webp) no-repeat center center/cover;
 }
 
 #game-container h3 {
-    color: #444;
+    color: #ffffff;
 }
 
 #questions {
