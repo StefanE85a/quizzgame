@@ -58,13 +58,13 @@ var score = 0;
 function loadQuestion() {
     var currentQuestion = quizQuestions[currentQuestionIndex];
     document.getElementById("questions").textContent = currentQuestion.question;
-    
+
     var optionsContainer = document.getElementById("options");
     optionsContainer.innerHTML = "";
-    currentQuestion.options.forEach(function(option) {
+    currentQuestion.options.forEach(function (option) {
         var optionDiv = document.createElement("div");
         optionDiv.textContent = option;
-        optionDiv.onclick = function() { checkAnswer(option); };
+        optionDiv.onclick = function () { checkAnswer(option); };
         optionsContainer.appendChild(optionDiv);
     });
 }
@@ -77,18 +77,17 @@ function checkAnswer(selectedOption) {
     } else {
         alert("Wrong answer.");
     }
-    currentQuestionIndex++;
-    loadNextQuestion();
 }
 
 function loadNextQuestion() {
+    currentQuestionIndex++;
     if (currentQuestionIndex < quizQuestions.length) {
         loadQuestion();
     } else {
         alert("Quiz finished! Your score: " + score + "/" + quizQuestions.length);
         currentQuestionIndex = 0;
         score = 0;
-        loadQuestion();
+        loadQuestion(); // This will restart the quiz after finishing
     }
 }
 

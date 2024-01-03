@@ -16,13 +16,16 @@ body {
 }
 
 /* ------------------------------Header Section------------------------------ */
-
+.heading {
+    margin-top: 0;
+    padding-top: 0;
+}
 /* ------------------------------Main Section------------------------------ */
 
 #game-container {
     width: 50%;
     margin: auto;
-    background-color: #f4f4f4;
+    background-color: black;
     padding: 20px;
     border-radius: 8px;
 }
@@ -45,8 +48,8 @@ body {
 }
 
 #options div:hover {
-    background-color: gray;
-    color: black;
+    background-color: black;
+    color: grey;
 }
 
 /* ------------------------------Footer Section------------------------------ */
@@ -62,14 +65,14 @@ footer {
 /* -----Social Media Icons----- */
 #social-networks {
     text-align: center;
-    padding: 10px 0;
+    padding: 5px 0;
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
 }
 
 #social-networks i {
-    font-size: 220%;
+    font-size: 160%;
     padding: 5%;
     color: #3a3a3a;
 }
@@ -79,10 +82,39 @@ footer {
     color: rgba(255, 255, 255, 0.548);
 }
 
+/* --------------Media query: tablets and larger (480px and up)-------------- */
+@media screen and (min-width: 480px) {
+
+    #social-networks {
+        padding: 20px 0;
+    }
+
+    #social-networks i {
+        font-size: 220%;
+        padding: 5%;
+        color: #3a3a3a;
+    }
+
+    #game-container {
+        width: 50%;
+    }
+
 /* --------------Media query: tablets and larger (768px and up)-------------- */
 @media screen and (min-width: 768px) {
 
 #social-networks {
     padding: 20px 0;
+}
+
+#social-networks i {
+    font-size: 220%;
+    padding: 5%;
+    color: #3a3a3a;
+}
+
+#game-container {
+    width: 25%;
+}
+
 }
 }
