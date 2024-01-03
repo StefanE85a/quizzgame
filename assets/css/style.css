@@ -42,11 +42,19 @@ body {
     margin-bottom: 20px;
 }
 
+#options div.correct-answer {
+    background-color: green;
+}
+
+#options div.wrong-answer {
+    background-color: red;
+}
+
 #options div {
     margin: 10px 0;
     cursor: pointer;
     padding: 10px;
-    background-color: lightgray;
+    background-color: rgba(211, 211, 211, 0.404);
     border-radius: 5px;
     text-align: center;
 }

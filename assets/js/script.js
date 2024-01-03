@@ -82,6 +82,12 @@ function loadQuestion() {
 
     var optionsContainer = document.getElementById("options");
     optionsContainer.innerHTML = "";
+
+    var optionsDivs = document.getElementById("options").children;
+    for (var i = 0; i < optionsDivs.length; i++) {
+        optionsDivs[i].classList.remove("correct-answer", "wrong-answer");
+    }
+
     currentQuestion.options.forEach(function (option) {
         var optionDiv = document.createElement("div");
         optionDiv.textContent = option;
@@ -90,21 +96,25 @@ function loadQuestion() {
         };
         optionsContainer.appendChild(optionDiv);
     });
+
     // Clear feedback
     document.getElementById("feedback").textContent = "";
 }
 
 function checkAnswer(selectedOption) {
     var currentQuestion = quizQuestions[currentQuestionIndex];
-    var feedbackElement = document.getElementById("feedback");
+    var optionsDivs = document.getElementById("options").children;
 
-    if (selectedOption === currentQuestion.answer) {
-        score++;
-        feedbackElement.textContent = "Correct!";
-        feedbackElement.style.color = "green";
-    } else {
-        feedbackElement.textContent = "Wrong answer.";
-        feedbackElement.style.color = "red";
+    for (var i = 0; i < optionsDivs.length; i++) {
+        var optionDiv = optionsDivs[i];
+        if (optionDiv.textContent === selectedOption) {
+            if (selectedOption === currentQuestion.answer) {
+                score++;
+                optionDiv.classList.add("correct-answer");
+            } else {
+                optionDiv.classList.add("wrong-answer");
+            }
+        }
     }
 }
 
