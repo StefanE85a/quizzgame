@@ -67,6 +67,8 @@ function loadQuestion() {
         optionDiv.onclick = function () { checkAnswer(option); };
         optionsContainer.appendChild(optionDiv);
     });
+    // Clear feedback
+    document.getElementById("feedback").textContent = "";
 }
 
 function checkAnswer(selectedOption) {
@@ -88,10 +90,12 @@ function loadNextQuestion() {
     if (currentQuestionIndex < quizQuestions.length) {
         loadQuestion();
     } else {
-        alert("Quiz finished! Your score: " + score + "/" + quizQuestions.length);
+        var finalScoreElement = document.getElementById("final-score");
+        finalScoreElement.textContent = "Quiz finished! Your score: " + score + "/" + quizQuestions.length;
+        finalScoreElement.style.color = "white";
         currentQuestionIndex = 0;
         score = 0;
-        loadQuestion(); // This will restart the quiz after finishing
+
     }
 }
 
