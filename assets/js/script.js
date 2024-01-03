@@ -109,7 +109,7 @@ function checkAnswer(selectedOption) {
         var optionDiv = optionsDivs[i];
         if (optionDiv.textContent === selectedOption) {
             // Background color of the selected option
-            optionDiv.style.backgroundColor = "rgba(0, 123, 255, 0.5)";
+            optionDiv.style.backgroundColor = "rgba(251, 155, 29, 0.74)";
 
             if (selectedOption === currentQuestion.answer) {
                 score++;

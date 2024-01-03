@@ -60,8 +60,7 @@ body {
 }
 
 #options div:hover {
-    background-color: rgba(0, 0, 0, 0.74);
-    color: grey;
+    background-color: rgba(211, 211, 211, 0.404);
 }
 
 #next-button {
