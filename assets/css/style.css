@@ -56,7 +56,7 @@ body {
 }
 
 #next-button {
-    padding: 0px 20px;
+    padding: 5px 20px;
     background-color: #4CAF50;
     color: white;
     border: none;
@@ -69,6 +69,23 @@ body {
 }
 
 #next-button:hover {
+    background-color: #45a049;
+}
+
+#retry-button {
+    padding: 5px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+
+}
+
+#retry-button:hover {
     background-color: #45a049;
 }
 

@@ -97,18 +97,27 @@ function loadQuestion() {
 }
 
 function checkAnswer(selectedOption) {
+    // Prevents answering if the Quiz has ended
+    if (currentQuestionIndex >= quizQuestions.length) {
+        return;
+    }
+
     var currentQuestion = quizQuestions[currentQuestionIndex];
     var optionsDivs = document.getElementById("options").children;
 
     for (var i = 0; i < optionsDivs.length; i++) {
         var optionDiv = optionsDivs[i];
         if (optionDiv.textContent === selectedOption) {
-            // Added Background color of the selected option
+            // Background color of the selected option
             optionDiv.style.backgroundColor = "rgba(0, 123, 255, 0.5)";
 
             if (selectedOption === currentQuestion.answer) {
                 score++;
+            }
 
+            // No more answering once an option is selected
+            for (var j = 0; j < optionsDivs.length; j++) {
+                optionsDivs[j].onclick = null;
             }
 
         } else {
@@ -118,19 +127,22 @@ function checkAnswer(selectedOption) {
 }
 
 function loadNextQuestion() {
-    currentQuestionIndex++;
-    if (currentQuestionIndex < quizQuestions.length) {
-        loadQuestion();
-    } else {
-        var finalScoreElement = document.getElementById("final-score");
-        finalScoreElement.textContent =
-            "Quiz finished! Your score: " + score + "/" + quizQuestions.length;
-        finalScoreElement.style.color = "white";
-        currentQuestionIndex = 0;
-        score = 0;
-        document.getElementById("retry-button").style.display = "";
-        document.getElementById("next-button").style.display = "none";
+    // Check if Quiz ended
+    if (currentQuestionIndex >= quizQuestions.length - 1) {
+        endQuiz();
+        return;
     }
+    currentQuestionIndex++;
+    loadQuestion();
+}
+
+function endQuiz() {
+    // Quiz End
+    var finalScoreElement = document.getElementById("final-score");
+    finalScoreElement.textContent = "Quiz finished! Your score: " + score + "/" + quizQuestions.length;
+    finalScoreElement.style.color = "white";
+    document.getElementById("retry-button").style.display = "";
+    document.getElementById("next-button").style.display = "none";
 }
 
 function restartQuiz() {
