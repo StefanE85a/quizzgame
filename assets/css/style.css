@@ -12,7 +12,7 @@ body {
     height: 100%;
     width: 100%;
     overflow: auto;
-    background-color: rgb(61, 61, 138);
+    background: url(../images/bgbg-image-1920x1080.webp) no-repeat center center fixed;
 }
 
 /* ------------------------------Header Section------------------------------ */
@@ -54,7 +54,7 @@ body {
     margin: 10px 0;
     cursor: pointer;
     padding: 10px;
-    background-color: rgba(211, 211, 211, 0.404);
+    background-color: rgba(211, 211, 211, 0.74);
     border-radius: 5px;
     text-align: center;
 }
