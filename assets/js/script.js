@@ -83,11 +83,6 @@ function loadQuestion() {
     var optionsContainer = document.getElementById("options");
     optionsContainer.innerHTML = "";
 
-    var optionsDivs = document.getElementById("options").children;
-    for (var i = 0; i < optionsDivs.length; i++) {
-        optionsDivs[i].classList.remove("correct-answer", "wrong-answer");
-    }
-
     currentQuestion.options.forEach(function (option) {
         var optionDiv = document.createElement("div");
         optionDiv.textContent = option;
@@ -108,12 +103,16 @@ function checkAnswer(selectedOption) {
     for (var i = 0; i < optionsDivs.length; i++) {
         var optionDiv = optionsDivs[i];
         if (optionDiv.textContent === selectedOption) {
+            // Added Background color of the selected option
+            optionDiv.style.backgroundColor = "rgba(0, 123, 255, 0.5)";
+
             if (selectedOption === currentQuestion.answer) {
                 score++;
-                optionDiv.classList.add("correct-answer");
-            } else {
-                optionDiv.classList.add("wrong-answer");
+
             }
+
+        } else {
+            optionDiv.style.backgroundColor = "rgba(211, 211, 211, 0.404)";
         }
     }
 }
