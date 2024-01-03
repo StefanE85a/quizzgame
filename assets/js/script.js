@@ -95,8 +95,18 @@ function loadNextQuestion() {
         finalScoreElement.style.color = "white";
         currentQuestionIndex = 0;
         score = 0;
+        document.getElementById("retry-button").style.display = "";
 
     }
+}
+
+function restartQuiz() {
+    currentQuestionIndex = 0;
+    score = 0;
+    document.getElementById("final-score").textContent = "";
+    document.getElementById("retry-button").style.display = "none";
+    loadQuestion();
+    document.getElementById("game-container").style.display = '';
 }
 
 loadQuestion();
