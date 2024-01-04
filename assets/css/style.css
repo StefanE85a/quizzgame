@@ -1,7 +1,7 @@
-/* -----Adding Google fonts import----- */
+/* --Adding Google fonts import-- */
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600&display=swap");
 
-/* ------------------------------Body Section------------------------------ */
+/* -----Body Section----- */
 body {
     font-family: "Kanit", sans-serif;
     text-align: center;
@@ -14,7 +14,7 @@ body {
     background: url(../images/bgbg-image-1920x1080.webp) no-repeat center center fixed;
 }
 
-/* ------------------------------Header Section------------------------------ */
+/* -----Header Section----- */
 .heading {
     margin-top: 0;
     padding-top: 0;
@@ -29,7 +29,7 @@ body {
     border-radius: 10px;
 }
 
-/* ------------------------------Main Section------------------------------ */
+/* -----Main Section----- */
 
 #game-container {
     width: 85%;
@@ -94,7 +94,7 @@ body {
     background-color: #45a049;
 }
 
-/* ------------------------------Footer Section------------------------------ */
+/* -----Footer Section----- */
 
 footer {
     background-color: #131313;
@@ -104,7 +104,7 @@ footer {
     width: 100%;
 }
 
-/* -----Social Media Icons----- */
+/* --Social Media Icons-- */
 #social-networks {
     text-align: center;
     padding: 5px 0;
@@ -119,12 +119,12 @@ footer {
     color: #3a3a3a;
 }
 
-/* -----Footer hover color----- */
+/* --Footer hover color-- */
 #social-networks i:hover {
     color: rgba(255, 255, 255, 0.548);
 }
 
-/* --------------Media query: tablets and larger (480px and up)-------------- */
+/* --Media query: tablets and larger (480px and up)-- */
 @media screen and (min-width: 480px) {
     #social-networks {
         padding: 20px 0;
@@ -140,8 +140,19 @@ footer {
         width: 50%;
     }
 
-    /* -------------Media query: tablets and larger (1200px and up)------------- */
+    /* --Media query: tablets and larger (768px and up)-- */
     @media screen and (min-width: 768px) {
+
+        /* -----From Header Section----- */
+        .logo {
+            width: 350px;
+            height: 175px;
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px;
+        }
+
+        /* --From Social Media Icons-- */
         #social-networks {
             padding: 20px 0;
         }
@@ -152,8 +163,32 @@ footer {
             color: #3a3a3a;
         }
 
+        /* -----From Main Section----- */
+
         #game-container {
-            width: 25%;
+            width: 50%;
+        }
+
+        /* --Media query: tablets and larger (1200px and up--- */
+        @media screen and (min-width: 1200px)
+
+        /* --From Social Media Icons-- */
+            {
+            #social-networks {
+                padding: 20px 0;
+            }
+
+            #social-networks i {
+                font-size: 220%;
+                padding: 5%;
+                color: #3a3a3a;
+            }
+
+            /* -----From Main Section----- */
+
+            #game-container {
+                width: 25%;
+            }
         }
     }
 }
