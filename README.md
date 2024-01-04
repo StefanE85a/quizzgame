@@ -1,39 +1,79 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Car QuizZ
 
-Welcome,
+![Mockup](assets/documentation/home-mockup.png)
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+# <u>Introduction</u>
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+Car QuizZ is an interactive web application designed to test users' knowledge of various car-related facts. This application provides a user-friendly experience for car enthusiasts to challenge themselves and learn interesting facts about cars, including their history, technology, and models.
 
-## Codeanywhere Reminders
+# <u>Key Features</u>
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+- **Interactive Quiz**: Users can answer multiple-choice questions related to cars.
+- **Score Tracking**: The application keeps track of the user's score throughout the quiz.
+- **Responsive Design**: The quiz is fully responsive, adapting to different screen sizes for optimal user experience.
+- **Accessible Design**: The application follows accessibility guidelines to cater to a wider audience, including contrast between background and foreground colors.
+- **User Feedback**: After each question, users receive immediate feedback.
 
-`python3 -m http.server`
+# <u>Technology Stack</u>
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+- **HTML**: Semantic markup for structuring content.
+- **CSS**: Styling and responsive design implementation.
+- **JavaScript**: Interactivity and dynamic content management.
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+# <u>Setup and Usage</u>
 
-`http_server`
+To run Car QuizZ, simply clone the repository and open the `index.html` file in a web browser. No additional setup is required.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+# <u>Validations</u>
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+The code has been validated to ensure quality and meet the standards:
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+- [HTML: Validated with W3C Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fstefane85a.github.io%2Fquizzgame%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=sv)
+- [CSS: Validated with Jigsaw Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fstefane85a.github.io%2Fquizzgame%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=sv)
+- JavaScript: Validated with JSHint - image below
+![JavaScript: Validated with JSHint](assets/documentation/js-hint.png)
 
-To log into the Heroku toolbelt CLI:
+# <u>Tests Made</u>
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+## Devices
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+- Galaxy fold
+- Galaxy S23
+- Ipad
+- Lenovo Legion Laptop
 
----
+# <u>Deployment</u>
 
-Happy coding!
+Car QuizZ is deployed on [GitHub Pages](https://stefane85a.github.io/quizzgame/). To view the live version, visit the provided link.
+
+## <u>Version Control</u>
+
+The project uses Git for version control and is hosted on GitHub at [Stefane85a](https://github.com/StefanE85a/quizzgame)
+
+# <u>Screenshots</u>
+
+![JavaScript: Linted with JSHint](assets/documentation/Lighthouse.png)
+
+# <u>Credits and Acknowledgements</u>
+
+- Johan for helping me test the Quizz-Game and give me pointers.
+
+### Media
+- [Felix Mittermeier](https://www.pexels.com/sv-se/@felixmittermeier/) for a beautifull background-image.
+- Google Fonts.
+- FontAwesome.
+
+### Code
+
+Code is mostly written by me, inspired from
+
+- Google searches like;
+- Guides and troubleshooting-solutions
+- Guides from W3schools
+- Guides from Code institute
+
+# <u>Future Enhancements</u>
+
+- Adjust for more Accessibility points
+- Add more info-sections in javascript, Css to make users better understand the functions.
+
