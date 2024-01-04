@@ -1,107 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Car learning Quizz" />
-    <meta
-      name="keywords"
-      content="quizz, car, engine, learning, suv, model s, bmw, lamborghini, abs, 911, horsepower, javascript, html, css"
-    />
-    <link rel="stylesheet" href="assets/css/style.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Car learning Quizz">
+    <meta name="keywords" content="quizz, car, engine, learning, suv, model s, bmw, lamborghini, abs, 911, horsepower, javascript, html, css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Car QuizZ</title>
-    <!-- Favicon -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="assets/favicon/favicon-16x16.png"
-    />
-  </head>
-  <body>
-    <!-------------------------Header Section-------------------------->
+        <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.webp">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.webp">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.webp">
+</head>
+<body>
+
+<!-------------------------Header Section-------------------------->
     <header>
-      <h1 class="heading">
-        <img class="logo" src="assets/images/carquizz.webp" alt="logo" />
-      </h1>
+        <h1 class="heading">
+            <img class="logo" src="assets/images/carquizz.webp" alt="logo">
+        </h1>
     </header>
 
-    <!--------------------------Main Section--------------------------->
-    <main class="background-image">
-      <section id="game-container" role="main">
-        <h3 id="questions"></h3>
-        <div id="options" role="list"></div>
-        <button id="next-button" onclick="loadNextQuestion()">Next</button>
-        <p id="final-score"></p>
-        <p id="feedback"></p>
-        <button id="retry-button" style="display: none" onclick="restartQuiz()">
-          Retry QuizZ
-        </button>
-      </section>
+<!--------------------------Main Section--------------------------->
+<main class="background-image">
+        <section id="game-container" role="main">
+            <h3 id="questions"></h3>
+            <div id="options" role="list"></div>
+            <button id="next-button" onclick="loadNextQuestion()">Next</button>
+            <p id="final-score"></p>
+            <p id="feedback"></p>
+            <button id="retry-button" style="display: none;" onclick="restartQuiz()">Retry QuizZ</button>
+        </section>
     </main>
 
-    <!-------------------------Footer Section-------------------------->
+<!-------------------------Footer Section-------------------------->
     <footer>
-      <ul id="social-networks">
-        <li>
-          <a
-            href="https://www.facebook.com/"
-            target="_blank"
-            rel="noopener"
-            aria-label="Visit our Facebook page (opens in a new tab)"
-            ><i class="fa-brands fa-square-facebook"></i
-          ></a>
-        </li>
-        <li>
-          <a
-            href="https://www.twitter.com/"
-            target="_blank"
-            rel="noopener"
-            aria-label="Visit our Twitter page (opens in a new tab)"
-            ><i class="fa-brands fa-square-twitter"></i
-          ></a>
-        </li>
-        <li>
-          <a
-            href="https://www.youtube.com/"
-            target="_blank"
-            rel="noopener"
-            aria-label="Visit our YouTube page (opens in a new tab)"
-            ><i class="fa-brands fa-square-youtube"></i
-          ></a>
-        </li>
-        <li>
-          <a
-            href="https://www.instagram.com/"
-            target="_blank"
-            rel="noopener"
-            aria-label="Visit our Instagram page (opens in a new tab)"
-            ><i class="fa-brands fa-square-instagram"></i
-          ></a>
-        </li>
-      </ul>
+            <ul id="social-networks">
+            <li>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener"
+                aria-label="Visit our Facebook page (opens in a new tab)"><i
+                        class="fa-brands fa-square-facebook"></i></a>
+            </li>
+            <li>
+            <a href="https://www.twitter.com/" target="_blank" rel="noopener"
+                aria-label="Visit our Twitter page (opens in a new tab)"><i
+                        class="fa-brands fa-square-twitter"></i></a>
+            </li>
+            <li>
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener"
+                aria-label="Visit our YouTube page (opens in a new tab)"><i
+                        class="fa-brands fa-square-youtube"></i></a>
+            </li>
+            <li>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener"
+                aria-label="Visit our Instagram page (opens in a new tab)"><i
+                        class="fa-brands fa-square-instagram"></i></a>
+            </li>
+        </ul>
     </footer>
 
-    <!-------------------------Script Section-------------------------->
+<!-------------------------Script Section-------------------------->
 
-    <!-- Google Fonts for footer - Social network -->
-    <script
-      src="https://kit.fontawesome.com/18e8b4f675.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Game-Container -->
+<!-- Google Fonts for footer - Social network -->
+    <script src="https://kit.fontawesome.com/18e8b4f675.js" crossorigin="anonymous"></script>
+<!-- Game-Container -->
     <script src="assets/js/script.js"></script>
-  </body>
+
+</body>
 </html>
