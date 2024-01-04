@@ -3,158 +3,157 @@
 
 /* ------------------------------Body Section------------------------------ */
 body {
-  font-family: "Kanit", sans-serif;
-  text-align: center;
-  color: #ffffff;
-  background-size: cover;
-  margin: 0;
-  height: 100%;
-  width: 100%;
-  overflow: auto;
-  background: url(../images/bgbg-image-1920x1080.webp) no-repeat center center
-    fixed;
+    font-family: "Kanit", sans-serif;
+    text-align: center;
+    color: #ffffff;
+    background-size: cover;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background: url(../images/bgbg-image-1920x1080.webp) no-repeat center center fixed;
 }
 
 /* ------------------------------Header Section------------------------------ */
 .heading {
-  margin-top: 0;
-  padding-top: 0;
-  margin-bottom: 0px;
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 0px;
 }
 
 .logo {
-  width: 280px;
-  height: 150px;
-  display: block;
-  margin: 0 auto;
-  border-radius: 10px;
+    width: 280px;
+    height: 150px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
 }
 
 /* ------------------------------Main Section------------------------------ */
 
 #game-container {
-  width: 85%;
-  height: auto;
-  margin: auto;
-  background-color: black;
-  padding: 20px 20px;
-  border-radius: 8px;
-  background: url(../images/bg-image-700x394.webp) no-repeat center center/cover;
+    width: 85%;
+    height: auto;
+    margin: auto;
+    background-color: black;
+    padding: 20px 20px;
+    border-radius: 8px;
+    background: url(../images/bg-image-700x394.webp) no-repeat center center/cover;
 }
 
 #game-container h3 {
-  color: #ffffff;
+    color: #ffffff;
 }
 
 #questions {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 #options div {
-  margin: 10px 0;
-  cursor: pointer;
-  padding: 10px;
-  background-color: rgba(251, 155, 29, 0.74);
-  border-radius: 5px;
-  text-align: center;
+    margin: 10px 0;
+    cursor: pointer;
+    padding: 10px;
+    background-color: rgba(251, 155, 29, 0.74);
+    border-radius: 5px;
+    text-align: center;
 }
 
 #options div:hover {
-  background-color: rgba(211, 211, 211, 0.404);
+    background-color: rgba(211, 211, 211, 0.404);
 }
 
 #next-button {
-  padding: 5px 20px;
-  background-color: #4caf50;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  margin-top: 20px;
-  transition: background-color 0.3s;
+    padding: 5px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
 }
 
 #next-button:hover {
-  background-color: #45a049;
+    background-color: #45a049;
 }
 
 #retry-button {
-  padding: 5px 20px;
-  background-color: #4caf50;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  margin-top: 20px;
-  transition: background-color 0.3s;
+    padding: 5px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
 }
 
 #retry-button:hover {
-  background-color: #45a049;
+    background-color: #45a049;
 }
 
 /* ------------------------------Footer Section------------------------------ */
 
 footer {
-  background-color: #131313;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
+    background-color: #131313;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
 /* -----Social Media Icons----- */
 #social-networks {
-  text-align: center;
-  padding: 5px 0;
-  display: flex;
-  justify-content: space-evenly;
-  list-style-type: none;
+    text-align: center;
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
 }
 
 #social-networks i {
-  font-size: 160%;
-  padding: 5%;
-  color: #3a3a3a;
+    font-size: 160%;
+    padding: 5%;
+    color: #3a3a3a;
 }
 
 /* -----Footer hover color----- */
 #social-networks i:hover {
-  color: rgba(255, 255, 255, 0.548);
+    color: rgba(255, 255, 255, 0.548);
 }
 
 /* --------------Media query: tablets and larger (480px and up)-------------- */
 @media screen and (min-width: 480px) {
-  #social-networks {
-    padding: 20px 0;
-  }
-
-  #social-networks i {
-    font-size: 220%;
-    padding: 5%;
-    color: #3a3a3a;
-  }
-
-  #game-container {
-    width: 50%;
-  }
-
-  /* --------------Media query: tablets and larger (768px and up)-------------- */
-  @media screen and (min-width: 768px) {
     #social-networks {
-      padding: 20px 0;
+        padding: 20px 0;
     }
 
     #social-networks i {
-      font-size: 220%;
-      padding: 5%;
-      color: #3a3a3a;
+        font-size: 220%;
+        padding: 5%;
+        color: #3a3a3a;
     }
 
     #game-container {
-      width: 25%;
+        width: 50%;
     }
-  }
+
+    /* -------------Media query: tablets and larger (1200px and up)------------- */
+    @media screen and (min-width: 768px) {
+        #social-networks {
+            padding: 20px 0;
+        }
+
+        #social-networks i {
+            font-size: 220%;
+            padding: 5%;
+            color: #3a3a3a;
+        }
+
+        #game-container {
+            width: 25%;
+        }
+    }
 }
