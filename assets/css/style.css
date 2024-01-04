@@ -11,7 +11,7 @@ body {
     height: 100%;
     width: 100%;
     overflow: auto;
-    background: url(../images/bgbg-image-1920x1080.webp) no-repeat center center fixed;
+    background: url(../images/bgbg-image-1920x1080.webp) no-repeat center center/cover;
 }
 
 /* -----Header Section----- */
