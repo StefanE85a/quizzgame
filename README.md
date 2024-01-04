@@ -31,6 +31,8 @@ The code has been validated to ensure quality and meet the standards:
 - [HTML: Validated with W3C Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fstefane85a.github.io%2Fquizzgame%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=sv)
 - [CSS: Validated with Jigsaw Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fstefane85a.github.io%2Fquizzgame%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=sv)
 - JavaScript: Validated with JSHint - image below
+
+
 ![JavaScript: Validated with JSHint](assets/documentation/js-hint.png)
 
 # <u>Tests Made</u>
